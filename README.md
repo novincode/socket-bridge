@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="#-quick-start"><strong>Quick Start</strong></a> ·
   <a href="#-installation"><strong>Installation</strong></a> ·
   <a href="#-features"><strong>Features</strong></a> ·
   <a href="#-usage"><strong>Usage</strong></a> ·
@@ -22,23 +23,40 @@
 
 ## 🚀 Overview
 
-Socket Bridge is a lightweight yet powerful WebSocket relay server that enables real-time bidirectional communication between multiple clients. Perfect for creating chat applications, collaborative tools, or any project requiring real-time data exchange.
+Socket Bridge empowers developers to build real-time WebSocket applications effortlessly—whether it's chat apps, multiplayer games, or live dashboards. It acts as a relay server, ensuring secure and efficient message delivery between clients with minimal latency and maximum reliability.
+
+<p align="center">
+  <code>Client A ⟷ Socket Bridge Server ⟷ Client B, Client C, Client D...</code>
+</p>
+
+## 🚀 Quick Start
+
+Get up and running in seconds:
+
+```bash
+# Clone, install, and start in one go
+git clone https://github.com/novincode/socket-bridge.git && cd socket-bridge
+pnpm install && cp .env.example .env && pnpm dev
+```
+
+🚨 **Security Tip:** Never expose your API key in client-side code. Use a secure backend to manage authentication.
 
 ## ✨ Features
 
-- **🔄 Seamless Message Relay** - Effortlessly transmit messages between connected clients
-- **🔐 Robust Authentication** - Secure your WebSocket connections with API key authentication
-- **⚙️ Highly Configurable** - Customize behavior through environment variables
-- **📋 Detailed Logging** - Keep track of connections and message events
-- **📢 Connection Announcements** - Broadcast client connection/disconnection events
-- **🛑 Graceful Shutdown** - Handle process termination safely
-- **🔍 TypeScript-First** - Built with type safety in mind
-- **🚀 Production-Ready** - Designed for reliability in real-world applications
+- **🔄 Instant Message Relay** - Real-time bidirectional communication with millisecond latency
+- **🔐 Enterprise-grade Security** - API key authentication, origin validation, and connection limits
+- **⚙️ Flexible Configuration** - Tailor server behavior through environment variables or code
+- **📋 Comprehensive Logging** - Console and file-based logging with detailed connection events
+- **❤️ Health Monitoring** - Automatic heartbeat and connection monitoring with configurable intervals
+- **📢 Event Broadcasting** - Built-in client join/leave notifications for all connected clients
+- **🛑 Graceful Error Handling** - Automatic recovery from network issues and message size limits
+- **🚀 Scalable & Reliable** - Handles thousands of connections effortlessly with minimal resource usage
 
 ## 📋 Table of Contents
 
 - [🔌 Socket Bridge](#-socket-bridge)
 - [🚀 Overview](#-overview)
+- [🚀 Quick Start](#-quick-start)
 - [✨ Features](#-features)
 - [🔧 Installation](#-installation)
 - [⚙️ Configuration](#️-configuration)
@@ -91,6 +109,8 @@ SOCKET_BRIDGE_VERBOSE=false                  # Enable detailed logging
 
 # Advanced settings
 SOCKET_BRIDGE_HEARTBEAT_INTERVAL=30000       # Heartbeat in milliseconds
+SOCKET_BRIDGE_LOG_FILE=logs                  # Path for log files
+SOCKET_BRIDGE_MAX_MESSAGE_SIZE=1048576       # Max message size (1MB)
 ```
 
 See the `.env.example` file for all available configuration options.
@@ -204,7 +224,13 @@ ws://localhost:8080?apiKey=your-secure-api-key&name=ClientName
 
 ## 🏗️ Technical Architecture
 
-Socket Bridge is designed with scalability and reliability in mind. It uses a modular architecture to handle WebSocket connections, authentication, and message relaying efficiently.
+Socket Bridge uses a high-performance WebSocket server with these key components:
+
+- **Connection Manager:** Handles client authentication and connection tracking
+- **Message Relay:** Efficiently broadcasts messages to all appropriate clients
+- **Heartbeat System:** Maintains connection health with configurable ping intervals
+- **Security Layer:** Validates origins and API keys for enhanced protection
+- **Logging System:** Provides detailed insights into server operations
 
 ## 🤝 Contributing
 
