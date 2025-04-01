@@ -1,17 +1,15 @@
 # 🔌 Socket Bridge
 
 <p align="center">
-  <img src="https://via.placeholder.com/150?text=Socket+Bridge" alt="Socket Bridge Logo" width="200"/>
-  <br>
   <em>Seamlessly connect WebSocket clients with powerful relay capabilities</em>
 </p>
 
 <p align="center">
-  <a href="#installation"><strong>Installation</strong></a> ·
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#usage"><strong>Usage</strong></a> ·
-  <a href="#configuration"><strong>Configuration</strong></a> ·
-  <a href="#api-reference"><strong>API</strong></a>
+  <a href="#-installation"><strong>Installation</strong></a> ·
+  <a href="#-features"><strong>Features</strong></a> ·
+  <a href="#-usage"><strong>Usage</strong></a> ·
+  <a href="#-configuration"><strong>Configuration</strong></a> ·
+  <a href="#-api-reference"><strong>API</strong></a>
 </p>
 
 <p align="center">
@@ -26,10 +24,6 @@
 
 Socket Bridge is a lightweight yet powerful WebSocket relay server that enables real-time bidirectional communication between multiple clients. Perfect for creating chat applications, collaborative tools, or any project requiring real-time data exchange.
 
-<p align="center">
-  <img src="https://via.placeholder.com/600x250?text=Socket+Bridge+Architecture" alt="Socket Bridge Architecture" width="600"/>
-</p>
-
 ## ✨ Features
 
 - **🔄 Seamless Message Relay** - Effortlessly transmit messages between connected clients
@@ -43,17 +37,21 @@ Socket Bridge is a lightweight yet powerful WebSocket relay server that enables 
 
 ## 📋 Table of Contents
 
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
+- [🔌 Socket Bridge](#-socket-bridge)
+- [🚀 Overview](#-overview)
+- [✨ Features](#-features)
+- [🔧 Installation](#-installation)
+- [⚙️ Configuration](#️-configuration)
+- [🚀 Usage](#-usage)
   - [Development](#development)
   - [Production](#production)
   - [Testing](#testing)
-- [Connecting Clients](#connecting-clients)
-- [API Reference](#api-reference)
-- [Technical Architecture](#technical-architecture)
-- [Contributing](#contributing)
-- [License](#license)
+- [🔌 Connecting Clients](#-connecting-clients)
+- [📖 API Reference](#-api-reference)
+- [🏗️ Technical Architecture](#️-technical-architecture)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [📞 Contact](#-contact)
 
 ## 🔧 Installation
 
@@ -61,7 +59,7 @@ Get up and running with Socket Bridge in minutes:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/socket-bridge.git
+git clone https://github.com/novincode/socket-bridge.git
 cd socket-bridge
 
 # Install dependencies
