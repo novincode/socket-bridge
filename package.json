@@ -1,0 +1,26 @@
+{
+  "name": "socket-bridge",
+  "version": "1.0.0",
+  "description": "Socket Bridge Application",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --exec ts-node --esm src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "nodemon": "^3.0.1",
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.18.1"
+  }
+}
